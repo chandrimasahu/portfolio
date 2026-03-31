@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+                background: linear-gradient(135deg, #6366f1, #bbd4066b);
+                color: white;
+                padding: 68px 71px;
+                text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            float: inline-end;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+            color: #0f172a;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .skill {
+            background: #e2e8f0;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>My Portfolio</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="chan.jpeg" alt="Profile Photo" class="profile-img">
+    <h1>Hello, I'm Chandrima Sahu</h1>
+    <p>Software Developer | AI Enthusiast | Problem Solver</p>
+</section>
+
+<section id="about" class="container">
+    <h2 class="section-title">About Me</h2>
+    <p>
+        I am a passionate developer with experience in Java, Python, and web technologies. 
+        I enjoy building scalable applications and exploring AI/ML solutions.
+    </p>
+</section>
+
+<section id="projects" class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+
+        <div class="card">
+            <h3>PDF Template Generator</h3>
+            <p>Automated system to generate PDF templates using AI and backend services.</p>
+        </div>
+
+        <div class="card">
+            <h3>Document Intelligence</h3>
+            <p>Extract structured data from PDFs using NLP and machine learning.</p>
+        </div>
+
+        <!-- <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal portfolio built using HTML, CSS, and JavaScript.</p>
+        </div> -->
+
+    </div>
+</section>
+
+<section id="blogs" class="container">
+    <h2 class="section-title">Blogs</h2>
+    <div class="projects">
+
+        <div class="card">
+            <h3>AI in Document Processing</h3>
+            <p>Exploring how machine learning can automate document understanding and data extraction.</p>
+            <a href="https://medium.com/@chansahu25/breaking-free-from-xpath-building-a-flexible-document-extraction-system-with-python-43ae8c08677f" target="_blank">Read on Medium →</a>
+        </div>
+
+        <div class="card">
+            <h3>Micro-frontend architecture and its importance</h3>
+            <p>Best practices for designing microfrontends for scalable frontends.</p>
+            <a href="https://medium.com/@chansahu25/micro-frontend-and-its-importance-fde2b20f2940" target="_blank">Read on Medium →</a>
+        </div>
+
+        <!-- <div class="card">
+            <h3>Getting Started with Machine Learning</h3>
+            <p>A beginner-friendly guide to starting your journey in machine learning and real-world applications.</p>
+            <a href="https://medium.com/@yourusername" target="_blank">Read on Medium →</a>
+        </div> -->
+
+    </div>
+</section>
+
+<section id="s class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+        <span class="skill">Java</span>
+        <span class="skill">Python</span>
+        <span class="skill">Spring Boot</span>
+        <span class="skill">FastAPI</span>
+        <span class="skill">Machine Learning</span>
+        <span class="skill">Angular</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Docker</span>
+    </div>
+</section>
+
+<section id="contact" class="container">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: chandrima.sahu55@gmail.com</p>
+    <p href="https://www.linkedin.com/in/chandrima-sahu-59a5811a1/">LinkedIn: linkedin.com/in/chandrima-sahu-59a5811a1/</p>
+    <p href="https://github.com/chandrimasahu">GitHub: github.com/chandrimasahu</p>
+</section>
+
+<footer>
+    <p>© 2026 Chandrima Sahu. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
